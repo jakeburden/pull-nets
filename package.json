@@ -1,6 +1,6 @@
 {
   "name": "pull-nets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a pull-stream interface for the `require('nets')` npm module",
   "main": "index.js",
   "dependencies": {
@@ -9,7 +9,7 @@
   "devDependencies": {
     "tape": "^4.6.3",
     "pull-stream": "^3.6.0"
- },
+  },
   "scripts": {
     "test": "tape test.js"
   },
