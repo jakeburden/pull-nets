@@ -1,6 +1,6 @@
 # pull-nets
 
-a small pull-stream interface that makes the `nets` npm module into source for making GET request in the browser or on the server
+a small pull-stream interface that makes the [nets](https://github.com/maxogden/nets) npm module into source for making GET request in the browser or on the server
 
 ## install
 
