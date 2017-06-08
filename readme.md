@@ -1,6 +1,7 @@
 # pull-nets
 
-a small pull-stream interface that makes the [nets](https://github.com/maxogden/nets) npm module into source for making GET request in the browser or on the server
+A small pull-stream interface that makes the [nets](https://github.com/maxogden/nets) npm module into a source.
+For making GET request in the browser or on the server.
 
 ## install
 
@@ -16,10 +17,14 @@ var pull = require('pull-stream')
 
 
 pull(
-  nets('http://127.0.0.1:9934'),
+  nets('https://scuttlebutt.nz'),
   pull.drain(function (buf) {
-    server.close()
-    t.same(buf.toString(), 'sup')
+    console.log(buf.toString())
   })
 )
 ```
+
+### note
+
+the nature of `nets` is to return a buffer.  so the source isn't really
+streaming, it runs once and returns a buffer into memory.
