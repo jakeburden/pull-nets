@@ -1,19 +1,32 @@
 {
   "name": "pull-nets",
   "version": "1.0.0",
-  "description": "a pull-stream interface for the `require('nets')` module",
+  "description": "a pull-stream interface for the `require('nets')` npm module",
   "main": "index.js",
-  "scripts": {
-    "test": "tape test.js"
-  },
-  "keywords": ['nets', 'pull', 'pull-stream', 'pull-nets'],
-  "author": "Jake Burden <@o91tsjBgL0l0zs475aRWYSAXFxvirZS7VrXmirY/msI=.ed25519>",
-  "license": "MIT",
   "dependencies": {
     "nets": "^3.2.0"
   },
   "devDependencies": {
-    "pull-stream": "^3.6.0",
-    "tape": "^4.6.3"
-  }
+    "tape": "^4.6.3",
+    "pull-stream": "^3.6.0"
+ },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jekrb/pull-nets.git"
+  },
+  "keywords": [
+    "nets",
+    "pull-nets",
+    "pull-stream",
+    "pull"
+  ],
+  "author": "Jake Burden <@o91tsjBgL0l0zs475aRWYSAXFxvirZS7VrXmirY/msI=.ed25519>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jekrb/pull-nets/issues"
+  },
+  "homepage": "https://github.com/jekrb/pull-nets#readme"
 }
